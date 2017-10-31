@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        var A_mid = 10;
+        var A_end = 8;
+        var B_mid = 1;
+        var B_end = 2;
+        var C_mid = 9;
+        var C_end = 5;
+	
+	function grade(a, b) {
+		var result = "";
+        	for (var i = 0; i < a; ++i) {
+            	result += "*";
+        	}
+
+	        for (var i = 0; i < 10 - a; ++i) {
+       		result += "_";
+        	}
+
+        	result += " + ";
+
+        	for (var i = 0; i < b; ++i) {
+            	result += "*";
+        	}
+
+        	for (var i = 0; i < 10 - b; ++i) {
+            	result += "_";
+        	}
+
+        	result += " = ";
+
+        	for (var i = 0; i < a + b; ++i) {
+         	result += "*";
+        	}
+
+        	for (var i = 0; i < 20 - (a + b); ++i) {
+            	result += "_";
+        	}
+		
+		return result;
+	}
+	
+        // A 학생 출력
+
+        console.log("A : " + grade(A_mid, A_end));
+
+        // B  학생 출력
+  
+        console.log("B : " + grade(B_mid, B_end));
+
+        // C 학생 출력
+
+        console.log("C : " + grade(C_mid, C_end));
+    </script>
+</head>
+<body>
+</body>
+</html>
